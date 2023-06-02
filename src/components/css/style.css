@@ -1,0 +1,118 @@
+/* Root Variables */
+:root{
+    --footer-color: #252525;
+    --footer-bottom: #1e1e1e;
+    --white-color: #fff;
+    --primary-color: #C0262B;
+    --black-color:#000;
+}
+
+/* Custom CSS */
+.btn-primary{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover{
+    filter: brightness(80%);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Navbar */
+.main-site-navbar{
+    background-color: var(--primary-color);
+}
+.main-site-navbar a{
+    color: var(--white-color);
+}
+
+
+/* Simple Post with Description */
+.SimplePostWithDescription{
+    padding: 30px 5px 30px 5px;
+}
+.SimplePostWithDescription .main-image{
+    transition: 0.3s all ease;
+}
+.SimplePostWithDescription .main-image:hover{
+    opacity: 0.9;;
+}
+.SimplePostWithDescription .category{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s all ease;
+    display: block;
+}
+.SimplePostWithDescription .category:hover{
+    color: #000;
+}
+.SimplePostWithDescription .heading{
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--black-color);
+    transition: 0.3s all ease;
+    margin-bottom: 10px;
+}
+.SimplePostWithDescription .heading:hover{
+    color: var(--primary-color);
+}
+.SimplePostWithDescription .author a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.SimplePostWithDescription .author a:hover{
+    text-decoration: underline;
+}
+
+.share-and-comment-info{
+    border: 1px solid #777;
+    width: fit-content;
+    display: flex;
+    padding: 5px;
+    color: var(--black-color);
+}
+
+.share-and-comment-info span{
+    color: #777;
+}
+
+/* Footer CSS */
+.site-footer{
+    background-color: var(--footer-color);
+    padding: 100px 0px 100px 0px;
+    color: var(--white-color);
+}
+.footer-social-icons a{
+    color: var(--white-color);
+    transition: 0.3s all ease;
+}
+.footer-social-icons a:hover{
+    color: var(--primary-color);
+}
+.footer-link-list ul{
+    list-style: none;
+}
+.footer-link-list ul li{
+    margin-bottom: 30px;
+}
+.footer-link-list ul li a{
+    color: var(--white-color);
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+.footer-link-list ul li a:hover{
+    color: var(--primary-color);
+}
+.footer-bottom{
+    background-color: var(--footer-bottom);
+    padding: 15px 0px;
+}
+.footer-bottom p{
+    color: var(--white-color);
+    margin-bottom: 0;
+}
