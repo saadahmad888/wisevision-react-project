@@ -10,9 +10,9 @@ const HorizontalPostWithDescription = () => {
                 </a>
             </div>
             <div className='ms-3'>
-                <p className='category'>
+                <a href='' className='category'>
                     Social Media
-                </p>
+                </a>
                 <a href="" className='heading'>
                     If you wanted to get rich, how would you do it?
                 </a>
