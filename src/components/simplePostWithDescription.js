@@ -1,32 +1,49 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
+import axios from 'axios';
 import ShareIcon from '@mui/icons-material/Share';
 import ModeCommentIcon from '@mui/icons-material/ModeComment';
 
 const SimplePostWithDescription = () => {
+    const [articlesData, setArticlesData] = useState([])
+    // const articles = axios.get("https://newsapi.org/v2/everything?q=bitcoin&apiKey=ee0eddb17efc47599c4fef608097f150").then((res) => {
+    //     console.log(res)
+    // }).catch((err) => {
+    //     console.log(err)
+    // })
+    useEffect(() => {
+        axios.get("https://newsapi.org/v2/everything?q=bitcoin&apiKey=ee0eddb17efc47599c4fef608097f150").then((res) => {
+            // console.log(res.data)
+            setArticlesData(res.data.articles[0])
+        }).catch((err) => {
+            console.log(err)
+        })
+    }, [])
+    // const article1 = articlesData[0]
+    console.log(articlesData)
   return (
     <>
     <div className='SimplePostWithDescription'>
         <div className=''>
-            <a href=''>
-                <img className='w-100 main-image' src='https://www.themes247.net/html5/goodnews/images/thumbs/4.jpg' alt='News Image'/>
+            <a href={articlesData?.url}>
+                <img className='w-100 main-image' src={articlesData?.urlToImage===null ? "https://www.themes247.net/html5/goodnews/images/thumbs/4.jpg":articlesData?.urlToImage} alt='News Image'/>
             </a>
         </div>
         <div className=''>
             <a href='' className='mb-0 category'>
-                MUSTREADS
+                {/* {articlesData?.source.name} */}
             </a>
-            <a href='' className='heading'>
-                If you wanted to get rich, how would you do it?
+            <a href={articlesData?.url} className='heading'>
+                {articlesData?.title}
             </a>
         </div>
         <div className=''>
             <p>
-                I think your best bet would be to start or join a startup. That's been a reliable way to get rich for hundreds of years.The word "startup" dates from the 1960s, but what happens in one is very similar.
+                {articlesData?.description}
             </p>
         </div>
         <div className='author'>
             <p>
-                By <a href=''>Paul Graham</a>
+                By <a href=''>{articlesData?.author}</a>
             </p>
         </div>
         <div className='share-and-comment-info'>

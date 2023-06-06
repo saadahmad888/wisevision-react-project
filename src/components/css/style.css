@@ -71,6 +71,53 @@
     padding: 10px 15px;
 }
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Simple Post Light Heading
+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.SimplePostLightHeading{
+    padding: 30px 5px 30px 5px;
+}
+.SimplePostLightHeading .main-image{
+    transition: 0.3s all ease;
+    border-radius: 10px;
+}
+.SimplePostLightHeading .main-image:hover{
+    opacity: 0.8;
+}
+.SimplePostLightHeading .category{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s all ease;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.SimplePostLightHeading .category:hover{
+    color: var(--black-color);
+}
+.SimplePostLightHeading .heading{
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--black-color);
+    transition: 0.3s all ease;
+    margin-bottom: 10px;
+}
+.SimplePostLightHeading .heading:hover{
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++
     Simple Post with and Without Description
@@ -103,12 +150,20 @@
 .SimplePostWithoutDescription .category:hover{
     color: var(--black-color);
 }
-.SimplePostWithDescription .heading,
-.SimplePostWithoutDescription .heading{
+.SimplePostWithDescription .heading{
     font-weight: bold;
     display: block;
     text-decoration: none;
     font-size: 30px;
+    color: var(--black-color);
+    transition: 0.3s all ease;
+    margin-bottom: 10px;
+}
+.SimplePostWithoutDescription .heading{
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
     color: var(--black-color);
     transition: 0.3s all ease;
     margin-bottom: 10px;
@@ -210,6 +265,156 @@
     color: #777;
 
 }
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Recent Post
+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.RecentPost{
+    display: flex;
+    padding-bottom: 10px;
+    /* align-items: center; */
+}
+.RecentPost .main-image-div{
+    width: 150px;
+}
+.RecentPost .main-image-div .main-img{
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.RecentPost .main-image-div .main-img:hover{
+    opacity: 0.8;
+}
+.RecentPost .heading{
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--black-color);
+    transition: 0.3s all ease;
+    margin-bottom: 5px;
+    transition: 0.3s all ease;
+}
+
+.RecentPost .heading:hover{
+    color: var(--primary-color);
+}
+
+.RecentPost .post-date-and-time{
+    color: #777;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Recent Post Block
+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.RecentPostBlock{
+    border: 1px solid #C7C8C9;
+    padding: 10px 30px 20px 30px;
+    margin-top: 20px;
+}
+.RecentPostBlock .sec-heading{
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Most Popular Block
+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.MostPopularBlock{
+    border: 1px solid #C7C8C9;
+    padding: 10px 30px 20px 30px;
+    margin-top: 20px;
+}
+.MostPopularBlock .sec-heading{
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+.popular-list ol li{
+    margin-bottom: 15px;
+}
+.popular-list ol li::marker{
+    color: var(--primary-color);
+    padding-right: 10px;
+}
+.popular-list ol li a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+.popular-list ol li a:hover{
+    color: var(--primary-color);
+}
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Follow US Block CSS
+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.FollowUsBlock{
+    border: 1px solid #C7C8C9;
+    padding: 10px 30px 20px 30px;
+    margin-top: 20px;
+}
+.FollowUsBlock .sec-heading{
+    color: var(--black-color);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.FollowUsBlock .social-links .facebook{
+    background-color: #3c5a9b;
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.FollowUsBlock .social-links .instagram{
+    background-color: #df4932;
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.FollowUsBlock .social-links .linkedin{
+    background-color: #007bb9;
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.FollowUsBlock .social-links .twitter{
+    background-color: #1fc1f1;
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.FollowUsBlock .social-links .youtube{
+    background-color: #cf1312;
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    /* margin-right: 10px; */
+    margin-bottom: 10px;
+}
+
+
 
 
 
