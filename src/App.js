@@ -5,6 +5,7 @@ import Login from "./components/login";
 import Signup from "./components/signup";
 import ForgrtPassword from "./components/forgetPassword";
 import NewPassword from "./components/newPassword";
+import SearchListin from "./components/searchListin";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/signup" element={<Signup/>} />
           <Route path="/forget" element={<ForgrtPassword/>} />
           <Route path="/newpass" element={<NewPassword/>} />
+          <Route path="/search" element={<SearchListin/>} />
         </Routes>
       </div>
     </Router>

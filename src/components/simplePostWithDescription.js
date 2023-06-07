@@ -19,7 +19,7 @@ const SimplePostWithDescription = () => {
         })
     }, [])
     // const article1 = articlesData[0]
-    console.log(articlesData)
+    // console.log(articlesData)
   return (
     <>
     <div className='SimplePostWithDescription'>

@@ -5,7 +5,7 @@ const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg main-site-navbar">
                 <div className="container">
-                    <a className="navbar-brand fw-bold" href="#">
+                    <a className="navbar-brand fw-bold" href="/">
                     <img className='' width={'50px'} src='https://seeklogo.com/images/A/ary-news-logo-F2E62D53D8-seeklogo.com.png' alt='logo' />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

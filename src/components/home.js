@@ -22,7 +22,7 @@ const Home = () => {
             console.log(err)
         })
     }, [])
-    console.log(articlesData)
+    // console.log(articlesData)
 
   return (
     <>
